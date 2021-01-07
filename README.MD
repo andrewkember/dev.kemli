@@ -1,4 +1,9 @@
-https://gohugo.io/hosting-and-deployment/hosting-on-github/
+# Hugo static site for dev.kem.li
+
+## Resources:
+
+* https://gohugo.io/hosting-and-deployment/hosting-on-github/
+* https://github.com/peaceiris/actions-hugo
 
 
 So the branch stuff...
