@@ -1,5 +1,5 @@
 ---
-title: "Autonomy, mastery, Purpose"
+title: "Autonomy, mastery, purpose"
 date: 2021-03-04T19:00:00Z
 draft: false
 ---
