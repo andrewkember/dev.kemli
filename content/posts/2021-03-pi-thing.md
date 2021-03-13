@@ -1,10 +1,16 @@
 ---
 title: "RPi temperature monitor"
 date: 2021-03-13T19:00:00Z
-draft: true
+draft: false
 ---
 
 I want to monitor the temperature in all the rooms in my house. 
+
+Contents:
+
+* [Priorities](#-priorities)
+* [Purchases](#-purchases)
+<!-- * [microSD OS image](#-microsd-os-image) -->
 
 **Why?** I like comfort and efficiency, so if I know what temperature the rooms in my house are, at all times of the day and night, I can tune the heating system to be comfortable and energy efficient. Also because I'm a bit of a geek, so this is classed as 'fun' which means I don't need to offset the cost of the project against my heating bill.
 
@@ -13,6 +19,7 @@ I want to monitor the temperature in all the rooms in my house.
 **How?** Well, that's the question, isn't it? My starting assumption is that I need a sensor in every room. This rules out a single smart thermostat, which might learn my habits, but would be woefully under-informed about the temperatures across my house. 
 
 # Priorities
+
 I've had lots of recommendations for good approaches. There are trade-offs to be made for each:
 
 * Battery vs mains
@@ -61,3 +68,29 @@ Total: £39 per unit. Obviously that component list wouldn't actually work - the
 Total: £27 per unit
 Blocker: Can only order one Raspberry Pi Zero W per customer? What madness is this?
 
+I'm going to give the Raspberry Pi route a try. It hits a lot of the sweet spots, and it'll be fun - even if I can't source 10 RPi Zero Ws because of the bizarre sales limits.
+
+# Purchases
+
+Here's what I'm starting out with.
+
+Central control server:
+
+* Raspberry Pi 4
+* [microSD card](https://www.jeffgeerling.com/blog/2019/raspberry-pi-microsd-card-performance-comparison-2019)
+* [Case](https://thepihut.com/products/flirc-raspberry-pi-4-case)
+* Pi 4 official power supply
+
+Temperature sensor pi:
+
+* Waterproof DS18B20 Digital temperature sensor + extras
+* Raspberry Pi Zero W
+* microSD card
+* Case
+* Micro-USB power supply
+
+<!-- 
+# microSD OS image
+
+The first order of business is to get a process for bootstrapping the Raspberry Pi Zeros 
+-->
