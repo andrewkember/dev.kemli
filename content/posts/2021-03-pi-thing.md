@@ -1,5 +1,5 @@
 ---
-title: "RPi temperature monitor"
+title: "Raspberry Pi temperature monitor"
 date: 2021-03-13T19:00:00Z
 draft: false
 ---
@@ -66,7 +66,8 @@ Total: £39 per unit. Obviously that component list wouldn't actually work - the
 |£3  |Shipping|
 
 Total: £27 per unit
-Blocker: Can only order one Raspberry Pi Zero W per customer? What madness is this?
+
+Blocker: I can only order one Raspberry Pi Zero W per customer? What madness is this?
 
 I'm going to give the Raspberry Pi route a try. It hits a lot of the sweet spots, and it'll be fun - even if I can't source 10 RPi Zero Ws because of the bizarre sales limits.
 
