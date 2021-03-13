@@ -1,0 +1,63 @@
+---
+title: "RPi temperature monitor"
+date: 2021-03-13T19:00:00Z
+draft: true
+---
+
+I want to monitor the temperature in all the rooms in my house. 
+
+**Why?** I like comfort and efficiency, so if I know what temperature the rooms in my house are, at all times of the day and night, I can tune the heating system to be comfortable and energy efficient. Also because I'm a bit of a geek, so this is classed as 'fun' which means I don't need to offset the cost of the project against my heating bill.
+
+**What?** I want a way to have a log of the temperature in each room of my house at regular intervals without having to be there in person, or - for that matter - be awake.
+
+**How?** Well, that's the question, isn't it? My starting assumption is that I need a sensor in every room. This rules out a single smart thermostat, which might learn my habits, but would be woefully under-informed about the temperatures across my house. 
+
+# Priorities
+I've had lots of recommendations for good approaches. There are trade-offs to be made for each:
+
+* Battery vs mains
+* Portability
+* Low maintenance
+
+Some people want the freedom to put the sensors anywhere. My preference is to have a system that I maintain (in person) about once a year. I'm happy to give up a power socket per room to get that, and have the sensor within reach of that power socket.
+
+* Wifi vs bluetooth vs Z-Wave vs Zigbee vs ethernet
+* Dedicated device vs DIY mashup
+* Arduino vs Raspberry Pi
+* Afinity to my skills
+
+I've done my time writing assembler and embedded C (for now, at least). I learnt both at university, and applied those skills in my first job after my degree. I've helped write I<sup>2</sup>C libraries and (different job) an X10 module in Python. So I've probably got the apptitude to use any of those options. But do I want to?
+
+* Alignment to my areas of interest
+
+I'm working in the wonderful world of DevOps, where Python and Ansible and Prometheus are regularly in the spotlight. I'm a manager in my day-job, so I *don't* actually get to play with the toys (except spreadsheets). It'd be cool to have a solution that uses those.
+
+* Price per unit: Cheaper is better, as long as the fun-factor is maintained.
+* Development time: Quicker is better. There really aren't many fun-project-hours in a givenn month.
+* Availablity of equipment: If it needs a lathe, a 3D printer or an underground network of tunnels, it's out.
+
+## Arduino approach
+| Cost | Thing |
+|------|-------|
+|£20 |Arduino uno / £6 Arduino nano|
+|£5	 |Real time clock board/Data logging shield|
+|£6	 |Temperature sensor|
+|£8	 |Bluetooth module??|
+
+Total: £39 per unit. Obviously that component list wouldn't actually work - the nano and uno have different form factors, the bluetooth has to talk to ... something, but it gives me a place to start from. I can apparently get a WiFi-enabled-Arduino-compatible board from China for cheaps. So that's an option.
+
+## Raspberry Pi approach
+
+| Cost | Thing |
+|------|-------|
+|£10 |Raspberry Pi Zero W|
+|£4  |DS18B20 temperature sensor|
+|£0  |4.7kohm resistor - free with sensor|
+|£1  |40 pin header|
+|£6  |USB PSU|
+|£3  |Case|
+|£3  |Shipping|
+
+Total: £27 per unit
+Blocker: Can only order one Raspberry Pi Zero W per customer? What madness is this?
+
