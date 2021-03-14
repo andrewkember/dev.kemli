@@ -6,7 +6,7 @@ draft: false
 
 My wife, who's an accomplished cook and baker, scribbled out a simple recipe to help me make pancakes.
 
-![Pancake recipe](/static/posts/2021-03-14-pancakes-recipe.jpg)
+![Pancake recipe](/static/posts/2021-03-pancakes-recipe.jpg)
 
 I took that simple instruction and had fun turning it into this monster.
 
