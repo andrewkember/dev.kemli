@@ -10,7 +10,7 @@ Contents:
 
 * [Priorities](#-priorities)
 * [Purchases](#-purchases)
-<!-- * [microSD OS image](#-microsd-os-image) -->
+* [microSD OS image](#-microsd-os-image)
 
 **Why?** I like comfort and efficiency. If I know the temperature of each room in my house, with periodic measurements twenty four hours a day, I can tune the heating system to be comfortable and energy efficient. Because I'm a bit of a geek, this is classed as 'fun' which means I don't need to offset the cost of the project against my heating bill.
 
@@ -90,10 +90,65 @@ Temperature sensor pi:
 * Case
 * Micro-USB power supply
 
-<!-- 
+
 # microSD OS image
 
-The first order of business is to get a process for bootstrapping the Raspberry Pi Zeros 
--->
+The first order of business is to get a process for bootstrapping the Raspberry Pi Zeros. 
+
+## Install the official Raspberry Pi Imager 
+...from https://www.raspberrypi.org/software/.
+
+(You could use this zsh script I wrote to do that, but honestly it seems like a lot of trouble to go to.)
+
+```zsh
+IMAGER="/Applications/Raspberry Pi Imager.app"
+# Install RPi imager software if it's not already available
+if [[ ! -a $IMAGER ]]; then
+    IMAGER_DOWNLOAD="https://downloads.raspberrypi.org/imager/imager_1.5.dmg"
+    wget $IMAGER_DOWNLOAD
+    DISKIMAGE=$(hdiutil attach ./imager_1.5.dmg | grep 'Raspberry' | cut -f1)
+    cp -R "/Volumes/Raspberry Pi Imager/Raspberry Pi Imager.app" /Applications/
+    hdiutil detach $DISKIMAGE
+fi
+```
+
+## Transfer the OS image to the microSD card
+
+![Raspberry Pi Imager](/static/posts/2021-03-pi-thing-pi-imager.png)
+
+1. Open Raspberry Pi Imager
+2. Plug in microSD card
+3. Choose `Raspberry Pi OS Lite (32-bit)`
+4. Choose microSD card
+5. CHoose Write
+6. MacOS is likely to ask you for various permissions for the imager
+7. The imaging unmounts the SD card, so unplug it and plug it in again
+
+## Prepare the OS image for first boot
+
+The first boot will be headless (no keyboard/monitor) and wireless (i.e. I want it to connect to my Wifi with no further configuration nesessary). The Pi OS image checks for a few additional files in the /boot directory on first boot. That enables me to enable SSH and WiFi.
+
+From a terminal, with the microSD card plugged back in...
+
+`cd /Volumes/boot`
+
+Enable SSH:
+
+`touch ssh`
+
+Enable and configure WiFi:
+
+```zsh
+cat << EOF > wpa_supplicant.conf
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+network={
+    ssid="YOUR_SSID"
+    psk="YOUR_WIFI_PASSWORD"
+    key_mgmt=WPA-PSK
+}
+EOF
+```
+
+Eject the microSD card safely using Finder, and unplug it.
 
 To be continued...
