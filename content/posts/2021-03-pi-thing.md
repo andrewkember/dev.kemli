@@ -6,17 +6,17 @@ draft: false
 
 I want to monitor the temperature in all the rooms in my house. 
 
-Contents:
-
-* [Priorities](#-priorities)
-* [Purchases](#-purchases)
-* [microSD OS image](#-microsd-os-image)
-
 **Why?** I like comfort and efficiency. If I know the temperature of each room in my house, with periodic measurements twenty four hours a day, I can tune the heating system to be comfortable and energy efficient. Because I'm a bit of a geek, this is classed as 'fun' which means I don't need to offset the cost of the project against my heating bill.
 
 **What?** I want a way to have a log of the temperature in each room of my house at regular intervals without having to be there in person, or - for that matter - be awake.
 
 **How?** Well, that's the question, isn't it? My starting assumption is that I need a sensor in every room. This rules out a single smart thermostat which might learn my habits, but would be woefully under-informed about the temperatures across my house. 
+
+Contents:
+
+* [Priorities](#-priorities)
+* [Purchases](#-purchases)
+* [microSD OS image](#-microsd-os-image)
 
 # Priorities
 
