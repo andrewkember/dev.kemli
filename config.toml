@@ -5,7 +5,7 @@ copyright = "Andrew Kember"
 DefaultContentLanguage = "en"
 SectionPagesMenu = "main"
 Paginate = 30 # this is set low for demonstrating with dummy content. Set to a higher number
-#googleAnalytics = ""
+googleAnalytics = "G-0RZR8M66RS"
 enableRobotsTXT = true
 
 # Publish stuff?
