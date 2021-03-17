@@ -17,6 +17,8 @@ Contents:
 * [Priorities](#-priorities)
 * [Purchases](#-purchases)
 * [microSD OS image](#-microsd-os-image)
+* [#First boot](#-#first-boot)
+* [Configure with Ansible](#-configure-with-ansible)
 
 # Priorities
 
@@ -114,7 +116,7 @@ fi
 
 ## Transfer the OS image to the microSD card
 
-![Raspberry Pi Imager](/static/posts/2021-03-pi-thing-pi-imager.png)
+![Raspberry Pi Imager](/static/static/posts/2021-03-pi-thing-pi-imager.png)
 
 1. Open Raspberry Pi Imager
 2. Plug in microSD card
@@ -151,4 +153,19 @@ EOF
 
 Eject the microSD card safely using Finder, and unplug it.
 
+# #First boot
+
+1. Assemble the Raspberry Pi Zero in the case
+2. Insert the microSD card
+3. Run `arp -a` to list the devices connected to your network
+4. Plug the power supply into the wall and plug the lead into the microUSB connector (it's the one closest to the corner of the board).
+5. Wait a minute or two for the Pi to boot
+6. Run `arp -a` and spot the difference. The host name for me is `raspberrypi.myhomedomain`
+<!-- 
+# Configure with Ansible
+
+Step zero for Ansible is to run a playbook on the Pi to provide it with it's long-term hostname and configure ssh correctly.
+
+`ansible-playbook -i hosts site.yml --user <user> --ask-pass -vvvv`
+ -->
 To be continued...
