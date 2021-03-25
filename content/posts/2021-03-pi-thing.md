@@ -161,11 +161,176 @@ Eject the microSD card safely using Finder, and unplug it.
 4. Plug the power supply into the wall and plug the lead into the microUSB connector (it's the one closest to the corner of the board).
 5. Wait a minute or two for the Pi to boot
 6. Run `arp -a` and spot the difference. The host name for me is `raspberrypi.myhomedomain`
-<!-- 
+
 # Configure with Ansible
 
-Step zero for Ansible is to run a playbook on the Pi to provide it with it's long-term hostname and configure ssh correctly.
+Step zero for Ansible is to run a playbook on the Pi to provide it with it's long-term hostname and configure ssh correctly. I don't know how to do that yet, so for the interim:
+
+## Create pubic-private keypair
+
+```zsh
+$ ssh-keygen -t rsa -f ./rpi-key
+Generating public/private rsa key pair.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in ./rpi-key.
+Your public key has been saved in ./rpi-key.pub.
+The key fingerprint is:
+SHA256:JRdQyqJfuDglJ4r+SqsdFXIF8FlXSi9QAE3ZY2nHXnU ak@Ashpool
+The key's randomart image is:
++---[RSA 3072]----+
+|  ..o=*==*+  .. E|
+|   . +o=*+o..  . |
+|  . = .o*++.     |
+|   o o o =.      |
+|    = + S        |
+| . o B o         |
+|..o o o          |
+|o... .           |
+|o++.             |
++----[SHA256]-----+
+
+$ ls rpi-key*
+rpi-key     rpi-key.pub
+
+```
+
+## Log in using SSH
+
+```
+$ ssh pi@raspberrypi.banno.ch
+The authenticity of host 'raspberrypi.myhomedomain (172.80.43.99)' can't be established.
+ECDSA key fingerprint is SHA256:6ryJBtgVc6k1liVATfBBXnapErFLAArbhVhwoFu7aw0.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'raspberrypi.myhomedomain,172.80.43.99' (ECDSA) to the list of known hosts.
+pi@raspberrypi.myhomedomain's password:
+Linux raspberrypi 5.4.83+ #1379 Mon Dec 14 13:06:05 GMT 2020 armv6l
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+
+SSH is enabled and the default password for the 'pi' user has not been changed.
+This is a security risk - please login as the 'pi' user and type 'passwd' to set a new password.
+
+pi@raspberrypi:~ $
+```
+
+## Create a new user
+
+```
+pi@raspberrypi:~ $ sudo adduser robot
+Adding user `robot' ...
+Adding new group `robot' (1001) ...
+Adding new user `robot' (1001) with group `robot' ...
+Creating home directory `/home/robot' ...
+Copying files from `/etc/skel' ...
+New password:
+Retype new password:
+passwd: password updated successfully
+Changing the user information for robot
+Enter the new value, or press ENTER for the default
+	Full Name []: Ansible Robot
+	Room Number []:
+	Work Phone []:
+	Home Phone []:
+	Other []:
+Is the information correct? [Y/n] y
+pi@raspberrypi:~ $
+```
+
+## Give that user passwordless sudo access
+
+```
+pi@raspberrypi:~ $ sudo adduser robot sudo
+Adding user `robot' to group `sudo' ...
+Adding user robot to group sudo
+Done.
+pi@raspberrypi:~ $
+
+sudo visudo /etc/sudoers.d/010_robot-nopasswd
+```
+
+Enter `robot ALL=(ALL) NOPASSWD: ALL`
+Save and quit the editor
+Test:
+
+```
+robot@raspberrypi:~ $ sudo whoami
+root
+```
+
+## Remove password for user
+
+```zsh
+robot@raspberrypi:~ $ sudo passwd robot -d
+passwd: password expiry information changed.
+robot@raspberrypi:~ $
+```
+
+## Give robot user same groups as pi
+```
+sudo cat /etc/group | grep pi
+
+sudo usermod -G adm,dialout,cdrom,audio,video,plugdev,games,users,input,netdev robot
+```
+
+## Remove default user 'pi'
+```
+robot@raspberrypi:~ $ sudo deluser --remove-home pi
+Looking for files to backup/remove ...
+Removing files ...
+Removing user `pi' ...
+Warning: group `pi' has no more members.
+Done.
+robot@raspberrypi:~ $
+```
+
+## Authorise public key for that user
+
+```
+$ ssh-copy-id -i ./rpi-key.pub robot@raspberrypi.banno.ch
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "./rpi-key.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+robot@raspberrypi.banno.ch's password:
+
+Number of key(s) added:        1
+
+Now try logging into the machine, with:   "ssh 'robot@raspberrypi.banno.ch'"
+and check to make sure that only the key(s) you wanted were added.
+
+$ ssh 'robot@raspberrypi.banno.ch' -i ./rpi-key
+Linux raspberrypi 5.4.83+ #1379 Mon Dec 14 13:06:05 GMT 2020 armv6l
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+
+SSH is enabled and the default password for the 'pi' user has not been changed.
+This is a security risk - please login as the 'pi' user and type 'passwd' to set a new password.
+
+robot@raspberrypi:~ $
+
+```
+
+
+## Set hostname
+
+```
+
+```
+
+
 
 `ansible-playbook -i hosts site.yml --user <user> --ask-pass -vvvv`
+<!-- 
+
  -->
 To be continued...
