@@ -116,7 +116,7 @@ fi
 
 ## Transfer the OS image to the microSD card
 
-![Raspberry Pi Imager](/static/static/posts/2021-03-pi-thing-pi-imager.png)
+![Raspberry Pi Imager](/static/posts/2021-03-pi-thing-pi-imager.png)
 
 1. Open Raspberry Pi Imager
 2. Plug in microSD card
