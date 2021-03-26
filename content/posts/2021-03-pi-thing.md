@@ -14,11 +14,11 @@ I want to monitor the temperature in all the rooms in my house.
 
 Contents:
 
-* [Priorities](#-priorities)
-* [Purchases](#-purchases)
-* [microSD OS image](#-microsd-os-image)
-* [#First boot](#-#first-boot)
-* [Configure with Ansible](#-configure-with-ansible)
+* [Priorities](#priorities)
+* [Purchases](#purchases)
+* [microSD OS image](#microsd-os-image)
+* [#First boot](#first-boot)
+* [Configure with Ansible](#configure-with-ansible)
 
 # Priorities
 
