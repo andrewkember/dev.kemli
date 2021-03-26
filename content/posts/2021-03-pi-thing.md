@@ -164,7 +164,16 @@ Eject the microSD card safely using Finder, and unplug it.
 
 # Configure with Ansible
 
-Step zero for Ansible is to run a playbook on the Pi to provide it with it's long-term hostname and configure ssh correctly. I don't know how to do that yet, so for the interim:
+There are a number of bootstrap tasks to perform that will let me connect to the Pi with Ansible in a consistent way. 
+
+* Create SSH keys
+* Create a new user
+* Enable SSH access for that user with that key and remove its password
+* Enable passwordless sudo for that user
+* Set the hostnmae
+* Clean up (delete) the default user
+
+Ideally, I'd like to complete those tasks automatically with Ansible too, but I don't know how yet, so in the interim:
 
 ## Create pubic-private keypair
 
@@ -198,7 +207,7 @@ rpi-key     rpi-key.pub
 ## Log in using SSH
 
 ```
-$ ssh pi@raspberrypi.banno.ch
+$ ssh pi@raspberrypi.myhomedomain
 The authenticity of host 'raspberrypi.myhomedomain (172.80.43.99)' can't be established.
 ECDSA key fingerprint is SHA256:6ryJBtgVc6k1liVATfBBXnapErFLAArbhVhwoFu7aw0.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
@@ -292,18 +301,18 @@ robot@raspberrypi:~ $
 ## Authorise public key for that user
 
 ```
-$ ssh-copy-id -i ./rpi-key.pub robot@raspberrypi.banno.ch
+$ ssh-copy-id -i ./rpi-key.pub robot@raspberrypi.myhomedomain
 /usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "./rpi-key.pub"
 /usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
 /usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
-robot@raspberrypi.banno.ch's password:
+robot@raspberrypi.myhomedomain's password:
 
 Number of key(s) added:        1
 
-Now try logging into the machine, with:   "ssh 'robot@raspberrypi.banno.ch'"
+Now try logging into the machine, with:   "ssh 'robot@raspberrypi.myhomedomain'"
 and check to make sure that only the key(s) you wanted were added.
 
-$ ssh 'robot@raspberrypi.banno.ch' -i ./rpi-key
+$ ssh robot@raspberrypi.myhomedomain -i ./rpi-key
 Linux raspberrypi 5.4.83+ #1379 Mon Dec 14 13:06:05 GMT 2020 armv6l
 
 The programs included with the Debian GNU/Linux system are free software;
@@ -312,25 +321,40 @@ individual files in /usr/share/doc/*/copyright.
 
 Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
 permitted by applicable law.
-
-SSH is enabled and the default password for the 'pi' user has not been changed.
-This is a security risk - please login as the 'pi' user and type 'passwd' to set a new password.
-
 robot@raspberrypi:~ $
-
 ```
-
 
 ## Set hostname
 
 ```
+robot@raspberrypi:~ $ echo "mon-livingroom" | sudo tee /etc/hostname
+mon-livingroom
 
+robot@raspberrypi:~ $ sudo sed -i 's/raspberrypi/mon-livingroom/g' /etc/hosts
+
+robot@raspberrypi:~ $ sudo reboot
+
+$ ssh robot@mon-livingroom.myhomedomain -i ./rpi-key
+The authenticity of host 'mon-livingroom.myhomedomain (172.80.43.99)' can't be established.
+ECDSA key fingerprint is SHA256:6ryJBtgVc3k1liVATeBBXnapErFLAArbhVhwoFu7aw0.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'mon-livingroom.myhomedomain' (ECDSA) to the list of known hosts.
+Linux mon-livingroom 5.4.83+ #1379 Mon Dec 14 13:06:05 GMT 2020 armv6l
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Fri Mar 26 22:05:57 2021 from 172.80.41.127
+robot@mon-livingroom:~ $
 ```
 
 
 
-`ansible-playbook -i hosts site.yml --user <user> --ask-pass -vvvv`
 <!-- 
+`ansible-playbook -i hosts site.yml --user <user> --ask-pass -vvvv`
 
  -->
 To be continued...
