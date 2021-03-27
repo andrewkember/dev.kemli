@@ -170,7 +170,7 @@ There are a number of bootstrap tasks to perform that will let me connect to the
 * Create a new user
 * Enable SSH access for that user with that key and remove its password
 * Enable passwordless sudo for that user
-* Set the hostnmae
+* Set the hostname
 * Clean up (delete) the default user
 
 Ideally, I'd like to complete those tasks automatically with Ansible too, but I don't know how yet, so in the interim:
