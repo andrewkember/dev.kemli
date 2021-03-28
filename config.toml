@@ -7,14 +7,22 @@ SectionPagesMenu = "main"
 Paginate = 30 # this is set low for demonstrating with dummy content. Set to a higher number
 googleAnalytics = "G-0RZR8M66RS"
 enableRobotsTXT = true
+theme = "ananke"
+
+[markup.goldmark.renderer]
+unsafe= true
 
 # Publish stuff?
 # publishDir = "docs"
 
-[module]
-  [[module.imports]]
-    # Theme
-    path = "github.com/theNewDynamic/gohugo-theme-ananke"
+# [module]
+#   [[module.imports]]
+#     # Theme
+#     path = "github.com/theNewDynamic/gohugo-theme-ananke"
+
+#   [[module.imports.mounts]]
+#       source = "layouts/partials"
+#       target = "layouts/partials"
 
 [sitemap]
   changefreq = "monthly"
