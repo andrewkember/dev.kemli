@@ -264,20 +264,19 @@ sudo visudo /etc/sudoers.d/010_robot-nopasswd
 ```
 
 Enter `robot ALL=(ALL) NOPASSWD: ALL`
+
 Save and quit the editor
+
 Test:
 
 ```
+pi@raspberrypi:~ $ logout
+Connection to raspberrypi.myhomedomain closed.
+
+$ ssh robot@raspberrypi
+
 robot@raspberrypi:~ $ sudo whoami
 root
-```
-
-## Remove password for user
-
-```zsh
-robot@raspberrypi:~ $ sudo passwd robot -d
-passwd: password expiry information changed.
-robot@raspberrypi:~ $
 ```
 
 ## Give robot user same groups as pi
@@ -287,18 +286,9 @@ sudo cat /etc/group | grep pi
 sudo usermod -G adm,dialout,cdrom,audio,video,plugdev,games,users,input,netdev robot
 ```
 
-## Remove default user 'pi'
-```
-robot@raspberrypi:~ $ sudo deluser --remove-home pi
-Looking for files to backup/remove ...
-Removing files ...
-Removing user `pi' ...
-Warning: group `pi' has no more members.
-Done.
-robot@raspberrypi:~ $
-```
-
 ## Authorise public key for that user
+
+From my dev laptop:
 
 ```
 $ ssh-copy-id -i ./rpi-key.pub robot@raspberrypi.myhomedomain
@@ -323,6 +313,26 @@ Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
 permitted by applicable law.
 robot@raspberrypi:~ $
 ```
+
+## Remove password for user
+
+```zsh
+robot@raspberrypi:~ $ sudo passwd robot -d
+passwd: password expiry information changed.
+robot@raspberrypi:~ $
+```
+
+## Remove default user 'pi'
+```
+robot@raspberrypi:~ $ sudo deluser --remove-home pi
+Looking for files to backup/remove ...
+Removing files ...
+Removing user `pi' ...
+Warning: group `pi' has no more members.
+Done.
+robot@raspberrypi:~ $
+```
+
 
 ## Set hostname
 
@@ -350,6 +360,24 @@ permitted by applicable law.
 Last login: Fri Mar 26 22:05:57 2021 from 172.80.41.127
 robot@mon-livingroom:~ $
 ```
+
+## Ansible bit
+
+This is what I want set up on my Raspberry Pi:
+
+* Daily automatic security updates 
+* Reboots as needed (or weekly)
+
+Services to set up:
+
+* Prometheus
+
+Application metrics to collect:
+
+* Hostname/location
+* Temperature
+
+System metrics to collect:
 
 
 
