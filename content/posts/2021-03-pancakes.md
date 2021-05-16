@@ -19,7 +19,7 @@ This makes four or five small pancakes.
 * 1 egg
 * 125ml milk
 * 1 tsp baking powder
-* 0.5 tsp citric acid (optional)
+* ~~0.5 tsp citric acid (optional)~~
 * 30ml (approx) hot water
 
 # Equipment
@@ -30,7 +30,7 @@ This makes four or five small pancakes.
 * Large frying pan
 * Vegetable oil
 * Whisk
-* Spatula
+* Spatula (turner)
 * Ladle
 * Oil brush
 * Cooling rack
