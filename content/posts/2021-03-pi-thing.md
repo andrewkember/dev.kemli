@@ -2,6 +2,9 @@
 title: "Raspberry Pi temperature monitor"
 date: 2021-03-13T19:00:00Z
 draft: false
+summary: |
+  I want to monitor the temperature in all the rooms in my house. 
+  Why? I like comfort and efficiency. If I know the temperature of each room in my house, with periodic measurements...
 ---
 
 I want to monitor the temperature in all the rooms in my house. 

@@ -2,6 +2,10 @@
 title: "Commonplace book"
 date: 2021-03-07T19:00:00Z
 draft: false
+summary: |
+  A commonplace book is a scrapbook of wisdom.
+
+  I've been hunting around for this concept for a while. Journals are about past events and reflection...
 ---
 
 A commonplace book is a scrapbook of wisdom.

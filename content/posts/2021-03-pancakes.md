@@ -2,6 +2,11 @@
 title: "Pancakes (American-style)"
 date: 2021-03-14T19:00:00Z
 draft: false
+summary: |
+  My wife, who's an accomplished cook and baker, scribbled out a simple recipe to help me make pancakes.
+
+  I took that simple instruction and had fun turning it into this monster.
+
 ---
 
 My wife, who's an accomplished cook and baker, scribbled out a simple recipe to help me make pancakes.
