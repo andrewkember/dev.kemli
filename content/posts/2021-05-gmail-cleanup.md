@@ -2,6 +2,11 @@
 title: "GMail Cleanup"
 date: 2021-05-16T19:00:00Z
 draft: false
+summary: |
+  Gmail has four tabs of email: Inbox, Social, Promotions and Updates. I've trained Gmail to put important messages in the Inbox, but Promotions and Updates are streams of ephemeral information that I don't want to maintain. I glance at new messages there, and read what I want. 
+
+  I'm writing a Google Apps Script to regularly archive those email streams.
+  
 ---
 
 Gmail has four tabs of email: Inbox, Social, Promotions and Updates. I've trained Gmail to put important messages in the Inbox, but Promotions and Updates are streams of ephemeral information that I don't want to maintain. I glance at new messages there, and read what I want. 
