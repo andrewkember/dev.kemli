@@ -1,7 +1,7 @@
 ---
 title: "Rewrite"
 date: 2002-06-26T19:28:08Z
-draft: true
+draft: false
 #disclaimer: represent
 summary: | 
     I'm rewriting Kember.net as we speak. You can see me here slaving away at my computer.
