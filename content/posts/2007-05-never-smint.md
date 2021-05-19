@@ -4,7 +4,7 @@ date: 2007-05-31T19:28:08Z
 draft: false
 #disclaimer: represent
 aliases:
-    - /static/articles/never-smint-your-dog/
+    - /articles/never-smint-your-dog/
 summary: | 
     I've just been reading about Xylitol, the sweetener used in Smint...
 ---
