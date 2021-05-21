@@ -8,7 +8,6 @@ summary: |
 
 ---
 
-
 I'm rewriting Kember.net as we speak. You can see me here slaving away at my computer.
 
 ![Webcam photo](/static/posts/2002-06-rewrite-capture.jpg)
