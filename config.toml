@@ -30,8 +30,8 @@ unsafe= true
   filename = "sitemap.xml"
 
 [params]
-  favicon = ""
-  site_logo = ""
+  favicon = "/static/images-header/ak-logo-2021.svg"
+  site_logo = "/static/images-header/ak-logo-2021-white.svg"
   description = "Because blogs are dead"
   twitter = "https://twitter.com/andrewkember"
   github = "https://github.com/andrewkember"
@@ -40,4 +40,5 @@ unsafe= true
   # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
   background_color_class = "bg-near-black"
   featured_image = "/static/images-header/kemli-sunset-1.jpg"
+  #featured_image = ""
   recent_posts_number = 2

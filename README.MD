@@ -7,6 +7,7 @@
 * https://gohugo.io/content-management/urls/#yaml-front-matter
 * https://bwaycer.github.io/hugo_tutorial.hugo/extras/aliases/
 * https://domchristie.github.io/turndown/
+* https://medium.com/swlh/are-you-using-svg-favicons-yet-a-guide-for-modern-browsers-836a6aace3df
 
 
 So the branch stuff...
