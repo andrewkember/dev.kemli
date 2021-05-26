@@ -3,12 +3,9 @@ title: "Rewrite"
 date: 2002-06-26T19:28:08Z
 draft: false
 #disclaimer: represent
-summary: | 
-    I'm rewriting Kember.net as we speak. You can see me here slaving away at my computer.
-
 ---
 
-I'm rewriting Kember.net as we speak. You can see me here slaving away at my computer.
+I'm rewriting Kember.net as we speak. You can see me here slaving away at my computer.<!--more-->
 
 ![Webcam photo](/static/posts/2002-06-rewrite-capture.jpg)
 
