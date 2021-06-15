@@ -6,7 +6,7 @@ aliases:
     - /articles/removing-landscape-advert-from-ubuntu-login/
 ---
 
-To remove the text that says: `Graph this data and manage this system at https://landscape.canonical.com/` while keeping the useful system information, edit the script that puts Landscape information into the message of the day (MOTD):
+To remove the text that says: `Graph this data and manage this system at https://landscape.canonical.com/` while keeping the useful system information, edit the script that puts Landscape information into the message of the day (MOTD):<!--more-->
 
 `sudo nano -w /etc/update-motd.d/50-landscape-sysinfo`
 
