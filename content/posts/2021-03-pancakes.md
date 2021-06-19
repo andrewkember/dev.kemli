@@ -15,7 +15,7 @@ My wife, who's an accomplished cook and baker, scribbled out a simple recipe to 
 
 I took that simple instruction and had fun turning it into this monster.
 
-# Ingredients
+## Ingredients
 
 This makes four or five small pancakes.
 
@@ -27,7 +27,7 @@ This makes four or five small pancakes.
 * ~~0.5 tsp citric acid (optional)~~
 * 30ml (approx) hot water
 
-# Equipment
+## Equipment
 
 * Large mixing bowl
 * Measuring jug
@@ -45,27 +45,27 @@ This makes four or five small pancakes.
 	* 1 tsp
 	* 0.5 tsp
 
-# Instructions
+## Instructions
 
 * Boil the kettle.
-* Put the frying pan on a medium heat. 
+* Put the frying pan on a medium heat.
 * Add some vegetable oil to the pan.
 
-<br>
+<!-- Make separate lists work-->
 
 * In the large mixing bowl, mix flour and baking powder.
 * In the measuring jug, whisk together the egg and the milk.
-* In the small bowl, mix the hot water, sugar and citric acid until dissolved.
+* In the small bowl, mix the hot water, sugar ~~and citric acid~~ until dissolved.
 
-<br>
+<!-- Make separate lists work-->
 
 * Pour the egg and milk into the large mixing bowl.
 * Combine them with the flour and baking powder.
 * Do not over-mix.
 
-<br>
+<!-- Make separate lists work-->
 
-* Add the water, sugar and citric acid mix to the large mixing bowl and combine. 
+* Add the water, sugar and citric acid mix to the large mixing bowl and combine.
 * Consistency should be like thick double cream.
 * Do not over mix.
 
@@ -75,7 +75,7 @@ This makes four or five small pancakes.
 * Pour one ladle-full of mixture into the centre of the pan.
 * Flip the pancake using the spatula as soon as the bottom is solid. (This prevents the bubbles escaping from the top and makes the pancakes nice and puffy.)
 
-<br>
+<!-- Make separate lists work-->
 
 * Cook until light brown.
 * Flip if needed to finish off the first side.
