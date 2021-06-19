@@ -70,7 +70,7 @@ openssl genrsa -des3 -out server.key 1024
 
 **Enter passphrase when prompted**
 \
-_server.key file is created in your current working directory._
+_`server.key` file is created in your current working directory._
 
 Now create the insecure key (no passphrase):
 
@@ -80,7 +80,7 @@ openssl rsa -in server.key -out server.key.insecure
 
 **Enter passphrase when prompted**
 \
-_server.key.insecure file is created in your current working directory._
+_`server.key.insecure` file is created in your current working directory._
 
 Name the key files appropriately:
 
@@ -255,4 +255,4 @@ Connection closed by foreign host.
 
 Wait for it... Okay - now **check your email**. If all has gone well, _you've got an email from yourself sitting in your inbox_.
 
-These instructions were pieced together from [Postfix: Ubuntu server guide](https://help.ubuntu.com/10.04/serverguide/C/postfix.html) and [Certificates: Ubuntu server guide](https://help.ubuntu.com/10.04/serverguide/C/certificates-and-security.html).
+These instructions were pieced together from [~~Postfix: Ubuntu server guide~~](https://help.ubuntu.com/10.04/serverguide/C/postfix.html) and [~~Certificates: Ubuntu server guide~~](https://help.ubuntu.com/10.04/serverguide/C/certificates-and-security.html).
