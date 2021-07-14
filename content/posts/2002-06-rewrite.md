@@ -5,7 +5,8 @@ draft: false
 #disclaimer: represent
 ---
 
-I'm rewriting Kember.net as we speak. You can see me here slaving away at my computer.<!--more-->
+I'm rewriting Kember.net as we speak. You can see me here slaving away at my computer.
+<!--more-->
 
 ![Webcam photo](/static/posts/2002-06-rewrite-capture.jpg)
 

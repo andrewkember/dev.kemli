@@ -10,12 +10,12 @@ In the shower: Dire Straits
 > I go checking out the reports  
   Digging up the dirt  
   You get to meet all sorts  
-  In this line of work.  <!--more-->
+  In this line of work.  
   Treachery and treason  
   There's always an excuse for it  
   And when I find the reason  
   I still can't get used to it.
-
+<!--more-->
 In the car: Dido
 
 > See my eyes, they carry your reflection,  
