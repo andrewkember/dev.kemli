@@ -4,7 +4,7 @@ title = "Kember.net"
 languagecode = "en"
 defaultcontentlanguage = "en"
 
-paginate = 20
+paginate = 40
 
 pygmentsstyle = "bw"
 pygmentscodefences = true
@@ -17,7 +17,7 @@ pygmentscodefencesguesssyntax = true
   info = "Cloud technologist. Wily old man with excellent packing skills."
   description = "Andrew Kember's website"
   keywords = "blog,cloud,personal"
-  avatarurl = "/static/images-header/ak-logo-2021-white.svg"
+  avatarurl = "/static/images-header/ak-logo-2021-grey.svg"
   #gravatar = "john.doe@example.com"
 
   favicon_32 = "/static/images-header/ak-logo-2021.svg"
@@ -25,7 +25,7 @@ pygmentscodefencesguesssyntax = true
 
   footercontent = "Obfuscation is Easy."
   hideFooter = false
-  hideCredits = false
+  hideCredits = true
   hideCopyright = false
   since = 2001
 
@@ -35,7 +35,7 @@ pygmentscodefencesguesssyntax = true
   hidecolorschemetoggle = false
 
   # customCSS = ["css/custom.css"]
-  # customSCSS = ["scss/custom.scss"]
+  customSCSS = ["scss/custom.scss"]
   # customJS = ["js/custom.js"]
 
 [taxonomies]
@@ -66,6 +66,10 @@ pygmentscodefencesguesssyntax = true
   name = "Blog"
   weight = 1
   url  = "posts/"
+[[menu.main]]
+  name = "Archive"
+  weight = 1
+  url  = "archive/"
 [[menu.main]]
   name = "About"
   weight = 2
