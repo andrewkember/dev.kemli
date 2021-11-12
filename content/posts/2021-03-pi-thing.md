@@ -7,13 +7,13 @@ summary: |
   Why? I like comfort and efficiency. If I know the temperature of each room in my house, with periodic measurements...
 ---
 
-I want to monitor the temperature in all the rooms in my house. 
+I want to monitor the temperature in all the rooms in my house.
 
 **Why?** I like comfort and efficiency. If I know the temperature of each room in my house, with periodic measurements twenty four hours a day, I can tune the heating system to be comfortable and energy efficient. Because I'm a bit of a geek, this is classed as 'fun' which means I don't need to offset the cost of the project against my heating bill.
 
 **What?** I want a way to have a log of the temperature in each room of my house at regular intervals without having to be there in person, or - for that matter - be awake.
 
-**How?** Well, that's the question, isn't it? My starting assumption is that I need a sensor in every room. This rules out a single smart thermostat which might learn my habits, but would be woefully under-informed about the temperatures across my house. 
+**How?** Well, that's the question, isn't it? My starting assumption is that I need a sensor in every room. This rules out a single smart thermostat which might learn my habits, but would be woefully under-informed about the temperatures across my house.
 
 Contents:
 
@@ -23,7 +23,7 @@ Contents:
 * [#First boot](#first-boot)
 * [Configure with Ansible](#configure-with-ansible)
 
-# Priorities
+## Priorities
 
 I've had lots of recommendations for good approaches. There are trade-offs to be made for each:
 
@@ -48,17 +48,18 @@ I'm working in the wonderful world of DevOps, where Python and Ansible and Prome
 * Development time: Quicker is better. There aren't many fun-project-hours in a given month.
 * Availablity of equipment: If it needs a lathe, a 3D printer or an underground network of tunnels, it's out.
 
-## Arduino approach
+### Arduino approach
+
 | Cost | Thing |
 |------|-------|
 |£20 |Arduino uno / £6 Arduino nano|
-|£5	 |Real time clock board/Data logging shield|
-|£6	 |Temperature sensor|
-|£8	 |Bluetooth module??|
+|£5 |Real time clock board/Data logging shield|
+|£6 |Temperature sensor|
+|£8 |Bluetooth module??|
 
 Total: £39 per unit. I reckon that component list wouldn't work - the nano and uno have different form factors, the bluetooth has to talk to ... something, but it gives me a place to start. I've heard I get a WiFi-enabled-Arduino-compatible board from China for cheaps. So that's an option.
 
-## Raspberry Pi approach
+### Raspberry Pi approach
 
 | Cost | Thing |
 |------|-------|
@@ -76,7 +77,7 @@ Blocker: I can order only one Raspberry Pi Zero W per customer? What madness is 
 
 I'm going to give the Raspberry Pi route a try. It hits a lot of the sweet spots, and it'll be fun - even if I can't source 10 RPi Zero Ws because of the bizarre sales limits.
 
-# Purchases
+## Purchases
 
 Here's what I'm starting out with.
 
@@ -95,12 +96,12 @@ Temperature sensor pi:
 * Case
 * Micro-USB power supply
 
+## microSD OS image
 
-# microSD OS image
+The first order of business is to get a process for bootstrapping the Raspberry Pi Zeros.
 
-The first order of business is to get a process for bootstrapping the Raspberry Pi Zeros. 
+### Install the official Raspberry Pi Imager
 
-## Install the official Raspberry Pi Imager 
 ...from https://www.raspberrypi.org/software/.
 
 (You could use this zsh script I wrote to do that, but honestly it seems like a lot of trouble to go to.)
@@ -117,7 +118,7 @@ if [[ ! -a $IMAGER ]]; then
 fi
 ```
 
-## Transfer the OS image to the microSD card
+### Transfer the OS image to the microSD card
 
 ![Raspberry Pi Imager](/static/posts/2021-03-pi-thing-pi-imager.png)
 
@@ -129,7 +130,7 @@ fi
 6. MacOS is likely to ask you for various permissions for the imager
 7. The imaging unmounts the SD card, so unplug it and plug it in again
 
-## Prepare the OS image for first boot
+### Prepare the OS image for first boot
 
 The first boot will be headless (no keyboard/monitor) and wireless (i.e. I want it to connect to my Wifi with no further configuration nesessary). The Pi OS image checks for a few additional files in the /boot directory on first boot. That enables me to enable SSH and WiFi.
 
@@ -156,7 +157,7 @@ EOF
 
 Eject the microSD card safely using Finder, and unplug it.
 
-# #First boot
+## #First boot
 
 1. Assemble the Raspberry Pi Zero in the case
 2. Insert the microSD card
@@ -165,9 +166,9 @@ Eject the microSD card safely using Finder, and unplug it.
 5. Wait a minute or two for the Pi to boot
 6. Run `arp -a` and spot the difference. The host name for me is `raspberrypi.myhomedomain`
 
-# Configure with Ansible
+## Configure with Ansible
 
-There are a number of bootstrap tasks to perform that will let me connect to the Pi with Ansible in a consistent way. 
+There are a number of bootstrap tasks to perform that will let me connect to the Pi with Ansible in a consistent way.
 
 * Create SSH keys
 * Create a new user
@@ -178,7 +179,7 @@ There are a number of bootstrap tasks to perform that will let me connect to the
 
 Ideally, I'd like to complete those tasks automatically with Ansible too, but I don't know how yet, so in the interim:
 
-## Create pubic-private keypair
+### Create pubic-private keypair
 
 ```zsh
 $ ssh-keygen -t rsa -f ./rpi-key
@@ -207,9 +208,9 @@ rpi-key     rpi-key.pub
 
 ```
 
-## Log in using SSH
+### Log in using SSH
 
-```
+```zsh
 $ ssh pi@raspberrypi.myhomedomain
 The authenticity of host 'raspberrypi.myhomedomain (172.80.43.99)' can't be established.
 ECDSA key fingerprint is SHA256:6ryJBtgVc6k1liVATfBBXnapErFLAArbhVhwoFu7aw0.
@@ -231,9 +232,9 @@ This is a security risk - please login as the 'pi' user and type 'passwd' to set
 pi@raspberrypi:~ $
 ```
 
-## Create a new user
+### Create a new user
 
-```
+```zsh
 pi@raspberrypi:~ $ sudo adduser robot
 Adding user `robot' ...
 Adding new group `robot' (1001) ...
@@ -245,18 +246,18 @@ Retype new password:
 passwd: password updated successfully
 Changing the user information for robot
 Enter the new value, or press ENTER for the default
-	Full Name []: Ansible Robot
-	Room Number []:
-	Work Phone []:
-	Home Phone []:
-	Other []:
+  Full Name []: Ansible Robot
+  Room Number []:
+  Work Phone []:
+  Home Phone []:
+  Other []:
 Is the information correct? [Y/n] y
 pi@raspberrypi:~ $
 ```
 
-## Give that user passwordless sudo access
+### Give that user passwordless sudo access
 
-```
+```zsh
 pi@raspberrypi:~ $ sudo adduser robot sudo
 Adding user `robot' to group `sudo' ...
 Adding user robot to group sudo
@@ -272,7 +273,7 @@ Save and quit the editor
 
 Test:
 
-```
+```zsh
 pi@raspberrypi:~ $ logout
 Connection to raspberrypi.myhomedomain closed.
 
@@ -282,18 +283,19 @@ robot@raspberrypi:~ $ sudo whoami
 root
 ```
 
-## Give robot user same groups as pi
-```
+### Give robot user same groups as pi
+
+```zsh
 sudo cat /etc/group | grep pi
 
 sudo usermod -G adm,dialout,cdrom,audio,video,plugdev,games,users,input,netdev robot
 ```
 
-## Authorise public key for that user
+### Authorise public key for that user
 
 From my dev laptop:
 
-```
+```zsh
 $ ssh-copy-id -i ./rpi-key.pub robot@raspberrypi.myhomedomain
 /usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "./rpi-key.pub"
 /usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
@@ -317,7 +319,7 @@ permitted by applicable law.
 robot@raspberrypi:~ $
 ```
 
-## Remove password for user
+### Remove password for user
 
 ```zsh
 robot@raspberrypi:~ $ sudo passwd robot -d
@@ -325,8 +327,9 @@ passwd: password expiry information changed.
 robot@raspberrypi:~ $
 ```
 
-## Remove default user 'pi'
-```
+### Remove default user 'pi'
+
+```zsh
 robot@raspberrypi:~ $ sudo deluser --remove-home pi
 Looking for files to backup/remove ...
 Removing files ...
@@ -336,10 +339,9 @@ Done.
 robot@raspberrypi:~ $
 ```
 
+### Set hostname
 
-## Set hostname
-
-```
+```zsh
 robot@raspberrypi:~ $ echo "mon-livingroom" | sudo tee /etc/hostname
 mon-livingroom
 
@@ -364,11 +366,11 @@ Last login: Fri Mar 26 22:05:57 2021 from 172.80.41.127
 robot@mon-livingroom:~ $
 ```
 
-## Ansible bit
+### Ansible bit
 
 This is what I want set up on my Raspberry Pi:
 
-* Daily automatic security updates 
+* Daily automatic security updates
 * Reboots as needed (or weekly)
 
 Services to set up:
@@ -381,8 +383,6 @@ Application metrics to collect:
 * Temperature
 
 System metrics to collect:
-
-
 
 <!-- 
 `ansible-playbook -i hosts site.yml --user <user> --ask-pass -vvvv`
