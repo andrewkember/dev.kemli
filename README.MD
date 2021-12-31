@@ -8,6 +8,7 @@
 * <https://bwaycer.github.io/hugo_tutorial.hugo/extras/aliases/>
 * <https://domchristie.github.io/turndown/>
 * <https://medium.com/swlh/are-you-using-svg-favicons-yet-a-guide-for-modern-browsers-836a6aace3df>
+* <https://www.regisphilibert.com/blog/2018/02/hugo-the-scope-the-context-and-the-dot/>
 
 So the branch stuff...
 

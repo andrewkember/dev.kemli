@@ -1,5 +1,5 @@
 baseurl = "https://dev.kem.li"
-title = "Kember.net"
+title = "Andrew Kember"
 #theme = "hugo-coder"
 languagecode = "en"
 defaultcontentlanguage = "en"
@@ -37,6 +37,7 @@ pygmentscodefencesguesssyntax = true
   # customCSS = ["css/custom.css"]
   customSCSS = ["scss/custom.scss"]
   # customJS = ["js/custom.js"]
+  mainSections = ['posts',]
 
 [taxonomies]
   category = "categories"
