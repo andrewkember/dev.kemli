@@ -1,5 +1,5 @@
 module github.com/andrewkember/dev.kemli
 
-go 1.16
+go 1.17
 
-require github.com/luizdepra/hugo-coder v0.0.0-20210714012429-37d519d6a964 // indirect
+require github.com/adityatelange/hugo-PaperMod v0.0.0-20220121185535-530044033e8a // indirect
