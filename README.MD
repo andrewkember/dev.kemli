@@ -10,6 +10,7 @@
 * <https://medium.com/swlh/are-you-using-svg-favicons-yet-a-guide-for-modern-browsers-836a6aace3df>
 * <https://www.regisphilibert.com/blog/2018/02/hugo-the-scope-the-context-and-the-dot/>
 * Tips for modules <https://www.hugofordevelopers.com/articles/master-hugo-modules-managing-themes-as-modules/>
+* https://jakearchibald.github.io/svgomg/
 
 So the branch stuff...
 
