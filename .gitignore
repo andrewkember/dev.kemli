@@ -3,6 +3,8 @@
 /public/
 /resources/_gen/
 hugo_stats.json
+.hugo_build.lock
+/_vendor/
 
 # Executable may be added to repository
 hugo.exe
