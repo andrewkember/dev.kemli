@@ -7,7 +7,7 @@ aliases:
     - /articles/obscure-python-urllib2-proxy-gotcha/
 ---
 
-This is going to be very obscure, technical and humourless<sup>[1](#fn11439920714b9667b2cecff)</sup>, so unless you suspect your environment-set http proxy is messing with your python, you can stop reading now.
+This is going to be very obscure, technical and humourless[^1], so unless you suspect your environment-set http proxy is messing with your python, you can stop reading now.
 
 This is actually two problems, and three solutions.
 
@@ -68,4 +68,4 @@ I tried this on Python 2.5 and it exhibited none of these problems. I’ve looke
 
 Ciprian Trofin has emailed me to point out that while the parsing of proxy urls in environment variables improved in Python 2.5, the `build_opener` still uses default handlers, and gets its proxy from the environment, when none is specified. This is the case with Python 2.6 – I guess it’s an awkward feature, not actually a bug. Thanks to Ciprian for the update and clarification!
 
-<sup>1</sup> Okay – we’re done. You can look at [funny things](http://xkcd.com/282/) now.
+[^1]: Okay – we’re done. You can look at [funny things](http://xkcd.com/282/) now.

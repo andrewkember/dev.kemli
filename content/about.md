@@ -1,7 +1,9 @@
 ---
 title: "About"
-date: 2001-12-01T19:28:08Z
+date: 2022-02-01T19:28:08Z
 draft: false
+aliases:
+    - /pages/about/
 ---
 
 I'm Andrew Kember.

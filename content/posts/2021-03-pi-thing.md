@@ -7,6 +7,8 @@ summary: |
   Why? I like comfort and efficiency. If I know the temperature of each room in my house, with periodic measurements...
 ---
 
+[Heads-up: This is a work in progress, I'm adding to it as I go.]
+
 I want to monitor the temperature in all the rooms in my house. 
 
 **Why?** I like comfort and efficiency. If I know the temperature of each room in my house, with periodic measurements twenty four hours a day, I can tune the heating system to be comfortable and energy efficient. Because I'm a bit of a geek, this is classed as 'fun' which means I don't need to offset the cost of the project against my heating bill.
