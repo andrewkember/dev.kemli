@@ -22,7 +22,7 @@ minify:
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
     title: ExampleSite
-    description: "ExampleSite description"
+    description: "Obfuscation is Easy"
     keywords: [Blog, Portfolio, PaperMod]
     author: AK
     # author: ["Me", "You"] # multiple authors
