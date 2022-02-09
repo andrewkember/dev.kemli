@@ -21,12 +21,12 @@ minify:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    title: ExampleSite
+    title: Andrew Kember
     description: "Obfuscation is Easy"
-    keywords: [Blog, Portfolio, PaperMod]
+    keywords: [Blog, Kember, PaperMod, Hugo]
     author: AK
     # author: ["Me", "You"] # multiple authors
-    images: ["<link or path of image for opengraph, twitter-cards>"]
+    images: ["/static/images-header/ak-logo-2021-black-filled-optimised.svg"]
     DateFormat: "January 2, 2006"
     defaultTheme: auto # dark, light
     disableThemeToggle: false
@@ -47,11 +47,11 @@ params:
     assets:
         # disableHLJS: true # to disable highlight.js
         # disableFingerprinting: true
-        favicon: "<link / abs url>"
-        favicon16x16: "<link / abs url>"
-        favicon32x32: "<link / abs url>"
-        apple_touch_icon: "<link / abs url>"
-        safari_pinned_tab: "<link / abs url>"
+        favicon: "/static/images-header/ak-logo-2021-black-filled-optimised.svg"
+        favicon16x16: "/static/images-header/ak-logo-2021-black-filled-optimised.svg"
+        favicon32x32: "/static/images-header/ak-logo-2021-black-filled-optimised.svg"
+        apple_touch_icon: "/static/images-header/ak-logo-2021-black-filled-optimised.svg"
+        safari_pinned_tab: "/static/images-header/ak-logo-2021-black-filled-optimised.svg"
 
     # label:
     #     text: " "
