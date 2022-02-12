@@ -13,6 +13,7 @@
 * https://jakearchibald.github.io/svgomg/
 * Light/dark themed SVG favicon <https://web.dev/building-an-adaptive-favicon/>
 * Search: <https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-features/#search-page>
+* Custom 404: <https://moonbooth.com/hugo/custom-404/>
 
 So the branch stuff...
 
@@ -31,11 +32,7 @@ The URLs links above shows how to do url aliases. I'd need that if I want to red
 
 [Turndown](https://domchristie.github.io/turndown/) seems to be a quick way to convert simple HTML to Markdown, which is nice.
 
-Lots to do for the move to Coder:
+Lots to do for the move to PaperMod:
 
-- [ ] Logo top left
-- [ ] About + Contact page
-- [ ] Navigation and archive
-- [ ] Initial navigation from splashpage
-- [ ] Fix low contrast code block typeface in dark mode
-- [ ] Get the template overrides workng again (twitch, twitch, is this what kills go modules again?)
+- [ ] Custom 404
+- [ ] Represent text/banner
