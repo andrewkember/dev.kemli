@@ -114,6 +114,14 @@ params:
         threshold: 0.4
         minMatchCharLength: 0
         keys: ["title", "permalink", "summary", "content"]
+
+# Outputs section for search
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
+
 menu:
     main:
         # - identifier: categories
@@ -128,6 +136,12 @@ menu:
           name: About
           url: /about/
           weight: 10
+        - identifier: search
+          name: Search
+          url: /search/
+          weight: 20
+
+
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 # pygmentsUseClasses: true
 # markup:
