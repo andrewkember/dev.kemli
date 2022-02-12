@@ -11,6 +11,7 @@
 * <https://www.regisphilibert.com/blog/2018/02/hugo-the-scope-the-context-and-the-dot/>
 * Tips for modules <https://www.hugofordevelopers.com/articles/master-hugo-modules-managing-themes-as-modules/>
 * https://jakearchibald.github.io/svgomg/
+* Light/dark themed SVG favicon https://web.dev/building-an-adaptive-favicon/
 
 So the branch stuff...
 
