@@ -5,8 +5,8 @@
     <link>https://dev.kem.li/posts/</link>
     <description>Recent content in Posts on Andrew Kember</description>
     <image>
-      <url>https://dev.kem.li/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://dev.kem.li/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://dev.kem.li/static/images-header/ak-logo-2021-black-filled-optimised.svg</url>
+      <link>https://dev.kem.li/static/images-header/ak-logo-2021-black-filled-optimised.svg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 16 May 2021 19:00:00 +0000</lastBuildDate><atom:link href="https://dev.kem.li/posts/index.xml" rel="self" type="application/rss+xml" />
@@ -60,15 +60,6 @@ Why? I like comfort and efficiency. If I know the temperature of each room in my
       
       <guid>https://dev.kem.li/posts/2021-03-autonomy/</guid>
       <description>Motivating people - allowing team members&#39; intrinsic motivation to flourish - is about granting them&amp;hellip;</description>
-    </item>
-    
-    <item>
-      <title>dev. Because blogs are dead</title>
-      <link>https://dev.kem.li/posts/2021-01-dev/</link>
-      <pubDate>Sun, 03 Jan 2021 19:28:08 +0000</pubDate>
-      
-      <guid>https://dev.kem.li/posts/2021-01-dev/</guid>
-      <description>The bloggies stopped in 2015, which - coincidently - was the last time I updated my other website.</description>
     </item>
     
     <item>
@@ -346,15 +337,6 @@ The raw taste of the alcohol very quickly fades when the food is heated, but a l
     </item>
     
     <item>
-      <title>Shirty</title>
-      <link>https://dev.kem.li/posts/2003-03-shirty/</link>
-      <pubDate>Sat, 15 Mar 2003 19:28:08 +0000</pubDate>
-      
-      <guid>https://dev.kem.li/posts/2003-03-shirty/</guid>
-      <description>&lt;p&gt;I decided to leave the house today to get some much needed leg-stretching by walking into town to buy a shirt. I’m glad I did, because I bumped into Matt and Caroline, who I haven’t seen for weeks, and I promised to go pub-quizing with them on Tuesday.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Hair today</title>
       <link>https://dev.kem.li/posts/2003-03-hair-today/</link>
       <pubDate>Thu, 13 Mar 2003 19:28:08 +0000</pubDate>
@@ -440,69 +422,12 @@ I still can&amp;rsquo;t get used to it.&lt;/p&gt;
     </item>
     
     <item>
-      <title>Continuous Professional Development</title>
-      <link>https://dev.kem.li/posts/2002-12-continuous/</link>
-      <pubDate>Wed, 18 Dec 2002 19:28:08 +0000</pubDate>
-      
-      <guid>https://dev.kem.li/posts/2002-12-continuous/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Anticipation</title>
-      <link>https://dev.kem.li/posts/2002-12-anticipation/</link>
-      <pubDate>Tue, 17 Dec 2002 19:28:08 +0000</pubDate>
-      
-      <guid>https://dev.kem.li/posts/2002-12-anticipation/</guid>
-      <description>\An*tic`i*pa&amp;quot;tion\, n. [L. anticipatio: cf. F. anticipation.]
- The act of anticipating, taking up, placing, or considering something beforehand, or before the proper time in natural order. Pleasurable expectation.  </description>
-    </item>
-    
-    <item>
-      <title>An introduction</title>
-      <link>https://dev.kem.li/posts/2002-12-introduction/</link>
-      <pubDate>Mon, 16 Dec 2002 19:28:08 +0000</pubDate>
-      
-      <guid>https://dev.kem.li/posts/2002-12-introduction/</guid>
-      <description>Concinnity over kilobytes etc. etc. Mr. Kember, please write out 100 times: I will not overwrite new files with old. Now go and stand in the corner, and rewrite your webpage.</description>
-    </item>
-    
-    <item>
-      <title>Introduction</title>
-      <link>https://dev.kem.li/posts/2002-12-intro/</link>
-      <pubDate>Sun, 01 Dec 2002 19:28:08 +0000</pubDate>
-      
-      <guid>https://dev.kem.li/posts/2002-12-intro/</guid>
-      <description>Welcome to Kember.net. The site has shrunk since its redecoration. I&amp;rsquo;m striving for concinnity over kilobytes.</description>
-    </item>
-    
-    <item>
       <title>Ego</title>
       <link>https://dev.kem.li/posts/2002-08-ego/</link>
       <pubDate>Sat, 31 Aug 2002 19:28:08 +0000</pubDate>
       
       <guid>https://dev.kem.li/posts/2002-08-ego/</guid>
       <description>The author calls for a vote of &lt;a href=&#34;https://web.archive.org/web/20030216023319/http://www.biblegateway.com/cgi-bin/bible?passage=PHIL+3&amp;amp;language=english&amp;amp;version=NIV&amp;amp;showfn=on&amp;amp;showxref=on&#34;&gt;no confidence in the flesh&lt;/a&gt;. The vote is passed by a margin of one. He walks with a limp, but thinks on his feet.</description>
-    </item>
-    
-    <item>
-      <title>Rewrite</title>
-      <link>https://dev.kem.li/posts/2002-06-rewrite/</link>
-      <pubDate>Wed, 26 Jun 2002 19:28:08 +0000</pubDate>
-      
-      <guid>https://dev.kem.li/posts/2002-06-rewrite/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m rewriting Kember.net as we speak. You can see me here slaving away at my computer.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>FAQ</title>
-      <link>https://dev.kem.li/posts/2001-12-faq/</link>
-      <pubDate>Sat, 01 Dec 2001 19:28:08 +0000</pubDate>
-      
-      <guid>https://dev.kem.li/posts/2001-12-faq/</guid>
-      <description>&lt;p&gt;The Non-Exhaustive &amp;ldquo;Andrew Kember FAQ&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Q: So Andrew, what&amp;rsquo;s it all about?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;A: So here I am. Andrew Kember. 23 ¾ years old. And still not sure what possible use a page dedicated to myself could have. Other people, yes, but me? But then again, the argument folds when I consider that you&amp;rsquo;re reading this, so you must be interested in who I am. Well, I wouldn&amp;rsquo;t want to disappoint.&lt;/p&gt;</description>
     </item>
     
   </channel>
