@@ -4,7 +4,7 @@ module:
   # Theme
   - path: github.com/adityatelange/hugo-PaperMod
 
-baseURL: "https://dev.kem.li/"
+baseURL: "https://blog.kember.net/"
 title: Andrew Kember
 paginate: 40
 
