@@ -32,3 +32,4 @@ Lots to do for the move to PaperMod:
 - [ ] Represent text/banner
 - [ ] Make HTTPS a GitHub Pages thing, not a Cloudflare thing??
 - [ ] Migrate to blog.kember.net.
+- [ ] Make it work on merge as well as push??
