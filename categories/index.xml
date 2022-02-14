@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on Andrew Kember</title>
-    <link>https://dev.kem.li/categories/</link>
+    <link>https://blog.kember.net/categories/</link>
     <description>Recent content in Categories on Andrew Kember</description>
     <image>
-      <url>https://dev.kem.li/static/images-header/ak-logo-2021-black-filled-optimised.svg</url>
-      <link>https://dev.kem.li/static/images-header/ak-logo-2021-black-filled-optimised.svg</link>
+      <url>https://blog.kember.net/static/images-header/ak-logo-2021-black-filled-optimised.svg</url>
+      <link>https://blog.kember.net/static/images-header/ak-logo-2021-black-filled-optimised.svg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://dev.kem.li/categories/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://blog.kember.net/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

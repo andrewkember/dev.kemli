@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://dev.kem.li/sitemap.xml
+Sitemap: https://blog.kember.net/sitemap.xml
