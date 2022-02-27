@@ -11,7 +11,7 @@ I'm rewriting Kember.net as we speak. You can see me here slaving away at my com
 
 ![Webcam photo](/static/posts/2002-06-rewrite-capture.jpg)
 
-The new and improved Kember.net is prefered by 8 out of 10 cats.
+The new and improved Kember.net is preferred by 8 out of 10 cats.
 
 Kember.net will support full reverse-biased matrix manipulation with fractional byte-aligned Mr. Kipling geometry.
 

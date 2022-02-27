@@ -38,9 +38,9 @@ Some applications need the freedom to put the sensors anywhere. My preference is
 * Wifi vs bluetooth vs Z-Wave vs Zigbee vs ethernet
 * Dedicated device vs DIY mashup
 * Arduino vs Raspberry Pi
-* Afinity to my skills
+* Affinity to my skills
 
-I've done my time writing assembler and embedded C (for now, at least). I learnt both at university, and applied those skills in my first job after my degree. I've helped write I<sup>2</sup>C libraries and (different job) an X10 module in Python. I think I've got the apptitude to use any of those options. ￼But do I want to?
+I've done my time writing assembler and embedded C (for now, at least). I learnt both at university, and applied those skills in my first job after my degree. I've helped write I<sup>2</sup>C libraries and (different job) an X10 module in Python. I think I've got the aptitude to use any of those options. ￼But do I want to?
 
 * Alignment to my areas of interest
 
@@ -48,7 +48,7 @@ I'm working in the wonderful world of DevOps, where Python and Ansible and Prome
 
 * Price per unit: Cheaper is better, as long as the fun-factor is maintained.
 * Development time: Quicker is better. There aren't many fun-project-hours in a given month.
-* Availablity of equipment: If it needs a lathe, a 3D printer or an underground network of tunnels, it's out.
+* Availability of equipment: If it needs a lathe, a 3D printer or an underground network of tunnels, it's out.
 
 ## Arduino approach
 | Cost | Thing |

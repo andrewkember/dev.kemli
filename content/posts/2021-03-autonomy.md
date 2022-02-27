@@ -6,7 +6,7 @@ summary: |
   Motivating people - allowing team members' intrinsic motivation to flourish - is about granting them...
 ---
 
-Motivating people - allowing team members' intrinsic motivation to flourish - is about granting them autonomy, encouraging them to develop mastery, and convincing them of our purpose. 
+Motivating people - allowing team members' intrinsic motivation to flourish - is about granting them autonomy, encouraging them to develop mastery, and convincing them of our purpose.
 
 One more step: Getting enough feedback to know how to set them up to succeed.
 

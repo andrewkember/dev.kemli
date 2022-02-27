@@ -6,4 +6,4 @@ aliases:
     - /articles/boneshaker-cherie-priest/
 ---
 
-Boneshaker is an intriguing steampunk story with a strong female lead. Character development is full enough to fulfil the purpose of the narative, without detracting from the pace of this adventure story. Use of steampunk technologies is carefully reined in, with no exciting props dropped in at the last minute to save the day.
+Boneshaker is an intriguing steampunk story with a strong female lead. Character development is full enough to fulfil the purpose of the narrative, without detracting from the pace of this adventure story. Use of steampunk technologies is carefully reined in, with no exciting props dropped in at the last minute to save the day.
