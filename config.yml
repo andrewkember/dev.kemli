@@ -12,6 +12,7 @@ enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
+# pluralizelisttitles: false
 
 # googleAnalytics: UA-123-45
 
@@ -136,10 +137,14 @@ menu:
           name: About
           url: /about/
           weight: 10
+        - identifier: commonplace
+          name: Commonplace
+          url: /commonplace/
+          weight: 20
         - identifier: search
           name: Search
           url: /search/
-          weight: 20
+          weight: 30
 
 
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
