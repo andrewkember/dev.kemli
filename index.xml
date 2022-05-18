@@ -70,7 +70,7 @@ Why? I like comfort and efficiency. If I know the temperature of each room in my
       <pubDate>Thu, 04 Mar 2021 19:00:00 +0000</pubDate>
       
       <guid>https://blog.kember.net/posts/2021-03-autonomy/</guid>
-      <description>Motivating people - allowing team members&#39; intrinsic motivation to flourish - is about granting them&amp;hellip;</description>
+      <description>Motivating people - allowing team members&amp;rsquo; intrinsic motivation to flourish - is about granting them&amp;hellip;</description>
     </item>
     
     <item>
@@ -107,7 +107,7 @@ Why? I like comfort and efficiency. If I know the temperature of each room in my
       <pubDate>Wed, 12 Mar 2014 19:28:08 +0000</pubDate>
       
       <guid>https://blog.kember.net/posts/2014-03-the-devils-waters/</guid>
-      <description>This is a fun, gripping special-ops military adventure. I liked the way Robbins told similar parts of the story from two characters&#39; perspectives, while still keeping the plot developing and the action going.</description>
+      <description>This is a fun, gripping special-ops military adventure. I liked the way Robbins told similar parts of the story from two characters&amp;rsquo; perspectives, while still keeping the plot developing and the action going.</description>
     </item>
     
     <item>
@@ -260,7 +260,7 @@ Similarly, use egrep instead of grep to enable extended regex functionality and 
       <description>This is going to be very obscure, technical and humourless1, so unless you suspect your environment-set http proxy is messing with your python, you can stop reading now.
 This is actually two problems, and three solutions.
 Problem 1 My python script bombs out with:
-File &amp;#34;c:\Python23\lib\urllib2.py&amp;#34;, line 506, in proxy_open if &amp;#39;@&amp;#39; in host: TypeError: iterable argument required Solution 1 Your http_proxy environment variable must include http:// at the start.</description>
+ File &amp;#34;c:\Python23\lib\urllib2.py&amp;#34;, line 506, in proxy_open  if &amp;#39;@&amp;#39; in host: TypeError: iterable argument required Solution 1 Your http_proxy environment variable must include http:// at the start.</description>
     </item>
     
     <item>
