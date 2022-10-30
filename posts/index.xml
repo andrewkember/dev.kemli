@@ -69,7 +69,7 @@ Why? I like comfort and efficiency. If I know the temperature of each room in my
       
       <guid>https://blog.kember.net/posts/2015-05-star-wars-films-uk-classifications/</guid>
       <description>One of my children is playing a Lego Star Wars games, but without having seen any of the films, she&amp;rsquo;s struggling with context. I had forgotten that the rating certificates were so low:
-   Title Rating     Episode I: The Phantom Menace. Parental guide: Violent. Robots die too, but Binks does not.    Episode II: Attack of the Clones. Parental guide: Violent. Lightsabers cauterize.</description>
+Title Rating Episode I: The Phantom Menace. Parental guide: Violent. Robots die too, but Binks does not. Episode II: Attack of the Clones. Parental guide: Violent. Lightsabers cauterize. Episode III: Revenge of the Sith. Parental guide: Violent. Death, fear and fried chicken.</description>
     </item>
     
     <item>
@@ -198,7 +198,7 @@ Radio waves. It charges itself with radio waves. Am I having my leg pulled?</des
       
       <guid>https://blog.kember.net/posts/2009-04-find-regular-expressions/</guid>
       <description>&amp;ldquo;Why don&amp;rsquo;t my regular expressions work with the &amp;lsquo;find&amp;rsquo; utility in Linux/Ubuntu/Unix/Cygwin/Posix-environment?&amp;rdquo;
- Short answer: You need -regextype posix-extended
+Short answer: You need -regextype posix-extended
 E.g. To find files with either of two file extensions, use: find . -regextype posix-extended -regex &amp;amp;#39;.*\.(xsd|java)&amp;amp;#39;
 Want to know the differences between POSIX Extended Regular Expressions and basic ones? Read this excellent resource about regular expressions. Want to test your regular expressions, live, in the browser? Try Regexpal.
 Similarly, use egrep instead of grep to enable extended regex functionality and use sed -r instead of sed.</description>
@@ -249,7 +249,7 @@ Similarly, use egrep instead of grep to enable extended regex functionality and 
       <description>This is going to be very obscure, technical and humourless1, so unless you suspect your environment-set http proxy is messing with your python, you can stop reading now.
 This is actually two problems, and three solutions.
 Problem 1 My python script bombs out with:
- File &amp;#34;c:\Python23\lib\urllib2.py&amp;#34;, line 506, in proxy_open  if &amp;#39;@&amp;#39; in host: TypeError: iterable argument required Solution 1 Your http_proxy environment variable must include http:// at the start.</description>
+File &amp;#34;c:\Python23\lib\urllib2.py&amp;#34;, line 506, in proxy_open if &amp;#39;@&amp;#39; in host: TypeError: iterable argument required Solution 1 Your http_proxy environment variable must include http:// at the start.</description>
     </item>
     
     <item>
@@ -259,7 +259,7 @@ Problem 1 My python script bombs out with:
       
       <guid>https://blog.kember.net/posts/2007-09-does-alcohol-really-boil-away-in-cooking/</guid>
       <description>&amp;ldquo;Don&amp;rsquo;t worry, there&amp;rsquo;s no alcohol in this red wine sauce — it&amp;rsquo;s cooked.&amp;rdquo;
- Heard that before? It&amp;rsquo;s the accepted wisdom about hot food made with alcoholic drinks. However, all is not as it seems — the accepted wisdom is wrong.
+Heard that before? It&amp;rsquo;s the accepted wisdom about hot food made with alcoholic drinks. However, all is not as it seems — the accepted wisdom is wrong.
 In this article, it&amp;rsquo;s explained that baking or simmering for 15 minutes leaves 40% of the alcohol. 1 hour of cooking leaves 25% of the alcohol.
 The raw taste of the alcohol very quickly fades when the food is heated, but a large amount of alcohol remains.</description>
     </item>
@@ -400,7 +400,7 @@ I still can&amp;rsquo;t get used to it.&lt;/p&gt;
       <pubDate>Thu, 19 Dec 2002 19:28:08 +0000</pubDate>
       
       <guid>https://blog.kember.net/posts/2002-12-rejoicing/</guid>
-      <description> Meeting the deadline Buying the last present Eating Robin&amp;rsquo;s minstrels  </description>
+      <description> Meeting the deadline Buying the last present Eating Robin&amp;rsquo;s minstrels </description>
     </item>
     
     <item>
