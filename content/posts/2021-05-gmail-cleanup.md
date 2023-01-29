@@ -3,7 +3,7 @@ title: "GMail Cleanup"
 date: 2021-05-16T19:00:00Z
 draft: false
 summary: |
-  Gmail has four tabs of email: Inbox, Social, Promotions and Updates. I've trained Gmail to put important messages in the Inbox, but Promotions and Updates are streams of ephemeral information that I don't want to maintain. I glance at new messages there, and read what I want. 
+  Gmail has four tabs of email: Inbox, Social, Promotions and Updates. I've trained Gmail to put important messages in the Inbox, but Promotions and Updates are streams of ephemeral information that I don't want to maintain. I glance at new messages there, and read what I want.
 
   I'm writing a Google Apps Script to regularly archive those email streams.
   
@@ -50,4 +50,4 @@ function cleanInbox() {
 
 I created a project at https://script.google.com/home and pasted this code in the Files section. When I chose Run for the first time, I was prompted for access to my Gmail. 
 
-Then I went to the Triggers section and set up a time-based trigger to run the function every week. 
+Then I went to the Triggers section and set up a time-based trigger to run the function every week.
