@@ -24,7 +24,6 @@ This makes four or five small pancakes.
 * 1 egg
 * 125ml milk
 * 1 tsp baking powder
-* ~~0.5 tsp citric acid (optional)~~
 * 30ml (approx) hot water
 
 ## Equipment
@@ -55,7 +54,7 @@ This makes four or five small pancakes.
 
 * In the large mixing bowl, mix flour and baking powder.
 * In the measuring jug, whisk together the egg and the milk.
-* In the small bowl, mix the hot water, sugar ~~and citric acid~~ until dissolved.
+* In the small bowl, mix the hot water and sugar until dissolved.
 
 <!-- Make separate lists work-->
 
@@ -65,7 +64,7 @@ This makes four or five small pancakes.
 
 <!-- Make separate lists work-->
 
-* Add the water, sugar and citric acid mix to the large mixing bowl and combine.
+* Add the water and sugar mix to the large mixing bowl and combine.
 * Consistency should be like thick double cream.
 * Do not over mix.
 
