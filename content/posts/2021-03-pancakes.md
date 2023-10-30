@@ -20,17 +20,15 @@ I took that simple instruction and had fun turning it into this monster.
 This makes four or five small pancakes.
 
 * 1 cup self raising flour
-* 1.5 tblsp sugar
+* 2 tblsp sugar
 * 1 egg
-* 125ml milk
+* 220ml milk
 * 1 tsp baking powder
-* 30ml (approx) hot water
 
 ## Equipment
 
 * Large mixing bowl
 * Measuring jug
-* Small bowl
 * Large frying pan
 * Vegetable oil
 * Whisk
@@ -42,33 +40,29 @@ This makes four or five small pancakes.
 	* 1 cup (237ml)
 	* 1 tblsp
 	* 1 tsp
-	* 0.5 tsp
 
 ## Instructions
 
-* Boil the kettle.
-* Put the frying pan on a medium heat.
-* Add some vegetable oil to the pan.
-
-<!-- Make separate lists work-->
-
-* In the large mixing bowl, mix flour and baking powder.
+* In the large mixing bowl, mix flour, sugar and baking powder.
 * In the measuring jug, whisk together the egg and the milk.
-* In the small bowl, mix the hot water and sugar until dissolved.
 
 <!-- Make separate lists work-->
 
 * Pour the egg and milk into the large mixing bowl.
-* Combine them with the flour and baking powder.
+* Combine them with the flour, sugar and baking powder.
 * Do not over-mix.
+* Consistency should be like thick double cream.
 
 <!-- Make separate lists work-->
 
-* Add the water and sugar mix to the large mixing bowl and combine.
-* Consistency should be like thick double cream.
-* Do not over mix.
+* Put the bowl into the fridge for 20 mins (min) or overnight (max).
 
 ## Cooking stage
+
+* Put the frying pan on a medium heat.
+* Add some vegetable oil to the pan.
+
+<!-- Make separate lists work-->
 
 * Use the oil brush to distribute the oil evenly in the pan.
 * Pour one ladle-full of mixture into the centre of the pan.
