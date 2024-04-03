@@ -15,6 +15,7 @@ This section is for tentative wisdom.
 * To clean out a junk drawer, remove the contents and put it in a box. Only when you've used one of the items in the box twice is it allowed to live in the drawer again. After a month, pitch or donate the remaining contents—or move the precious or useful stuff to deeper storage. But, yeah, you should probably just pitch it. (Merlin)
 * Chesterton's Fence (Merlin)
 
+
 ## Internal
 
 * Photos of people make better memories than photos of places.
@@ -34,6 +35,12 @@ This section is for tentative wisdom.
 > I pointed to my head. “This is where nice comes from,” I said. Then, I put my hand over my heart. “This is where kind comes from.”
 
 (Thanks, [Wil Wheaton, 2021](https://wilwheaton.net/2021/11/whenever-possible-be-the-person-you-needed-in-your-life/))
+
+### Responsibilities and boundaries
+
+* Poor planning on your part does not necessitate an emergency on mine. (Thanks, Titus)
+* Not my circus, not my monkeys (i.e. It's none of my business)
+* Unless: It's not my fault but it is my problem.
 
 ## Things
 
